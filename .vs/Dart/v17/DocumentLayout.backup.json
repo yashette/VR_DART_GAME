@@ -3,7 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\Max\\Dart\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{159D45A4-431C-E35D-3325-D930AC084F29}|Assembly-CSharp.csproj|c:\\users\\max\\dart\\assets\\animatehandoninput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{159D45A4-431C-E35D-3325-D930AC084F29}|Assembly-CSharp.csproj|c:\\users\\max\\dart\\assets\\gamemenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{159D45A4-431C-E35D-3325-D930AC084F29}|Assembly-CSharp.csproj|solutionrelative:assets\\gamemenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{159D45A4-431C-E35D-3325-D930AC084F29}|Assembly-CSharp.csproj|c:\\users\\max\\dart\\assets\\setturntype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{159D45A4-431C-E35D-3325-D930AC084F29}|Assembly-CSharp.csproj|solutionrelative:assets\\setturntype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{159D45A4-431C-E35D-3325-D930AC084F29}|Assembly-CSharp.csproj|C:\\Users\\Max\\Dart\\assets\\xroffsetgrabinteractable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{159D45A4-431C-E35D-3325-D930AC084F29}|Assembly-CSharp.csproj|solutionrelative:assets\\xroffsetgrabinteractable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{159D45A4-431C-E35D-3325-D930AC084F29}|Assembly-CSharp.csproj|C:\\Users\\Max\\Dart\\assets\\animatehandoninput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{159D45A4-431C-E35D-3325-D930AC084F29}|Assembly-CSharp.csproj|solutionrelative:assets\\animatehandoninput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -19,15 +31,52 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "GameMenuManager.cs",
+              "DocumentMoniker": "C:\\Users\\Max\\Dart\\Assets\\GameMenuManager.cs",
+              "RelativeDocumentMoniker": "Assets\\GameMenuManager.cs",
+              "ToolTip": "C:\\Users\\Max\\Dart\\Assets\\GameMenuManager.cs",
+              "RelativeToolTip": "Assets\\GameMenuManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T11:18:37.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SetTurnType.cs",
+              "DocumentMoniker": "C:\\Users\\Max\\Dart\\Assets\\SetTurnType.cs",
+              "RelativeDocumentMoniker": "Assets\\SetTurnType.cs",
+              "ToolTip": "C:\\Users\\Max\\Dart\\Assets\\SetTurnType.cs",
+              "RelativeToolTip": "Assets\\SetTurnType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T11:04:13.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "XROffsetGrabInteractable.cs",
+              "DocumentMoniker": "C:\\Users\\Max\\Dart\\Assets\\XROffsetGrabInteractable.cs",
+              "RelativeDocumentMoniker": "Assets\\XROffsetGrabInteractable.cs",
+              "ToolTip": "C:\\Users\\Max\\Dart\\Assets\\XROffsetGrabInteractable.cs",
+              "RelativeToolTip": "Assets\\XROffsetGrabInteractable.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAiwCsAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T09:41:31.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "AnimateHandOnInput.cs",
               "DocumentMoniker": "C:\\Users\\Max\\Dart\\Assets\\AnimateHandOnInput.cs",
               "RelativeDocumentMoniker": "Assets\\AnimateHandOnInput.cs",
               "ToolTip": "C:\\Users\\Max\\Dart\\Assets\\AnimateHandOnInput.cs",
               "RelativeToolTip": "Assets\\AnimateHandOnInput.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T20:14:33.238Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-01T20:14:33.238Z"
             }
           ]
         }
