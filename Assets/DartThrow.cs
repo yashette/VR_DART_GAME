@@ -15,6 +15,8 @@ public class DartThrow : MonoBehaviour
     public float throwForceMultiplier = 2.5f; // Force du lancer
     public float rotationSmoothness = 15f; // Vitesse d'alignement
 
+    public Quaternion respawnRotation = Quaternion.Euler(0, 0, 0); // Rotation fixe après réapparition
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -57,6 +59,9 @@ public class DartThrow : MonoBehaviour
 
         // Attendre une frame pour éviter l'erreur de kinematic
         StartCoroutine(ApplyThrowVelocity());
+
+        // Démarrer le processus de disparition et de réapparition
+        StartCoroutine(DestroyAndRespawnDart());
     }
 
     private IEnumerator ApplyThrowVelocity()
@@ -113,5 +118,33 @@ public class DartThrow : MonoBehaviour
         // Appliquer la rotation forcée pour maintenir l'orientation horizontale
         Quaternion targetRotation = Quaternion.LookRotation(forwardDirection, Vector3.up);
         transform.rotation = targetRotation;
+    }
+
+    private IEnumerator DestroyAndRespawnDart()
+    {
+        yield return new WaitForSeconds(5f); // Attendre 5 secondes avant disparition
+
+        // Désactiver l'interaction pour éviter les bugs
+        grabInteractable.enabled = false;
+
+        Debug.Log("Avant Réapparition -> Position actuelle : " + transform.position);
+
+
+        // Réinitialiser la position et la rotation
+        transform.position = new Vector3(-1.90910006f, 0.574800014f, -1.34679997f);
+        transform.rotation = respawnRotation;
+
+        Debug.Log("Apres Réapparition -> Position actuelle : " + transform.position);
+
+
+        // Réinitialiser la physique
+        rb.isKinematic = true;
+        rb.velocity = Vector3.zero;
+        rb.angularVelocity = Vector3.zero;
+
+        yield return new WaitForSeconds(0.5f); // Petite pause pour éviter tout bug visuel
+
+        // Réactiver l'interaction après réapparition
+        grabInteractable.enabled = true;
     }
 }
