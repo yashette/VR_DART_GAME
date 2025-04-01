@@ -12,7 +12,7 @@ public class DartThrow : MonoBehaviour
 
     public Transform pointHP;  // Pointe de la fléchette (avant)
     public Transform flightHP; // Ailette (arrière)
-    public float throwForceMultiplier = 2.5f; // Force du lancer
+    public float throwForceMultiplier = 5f; // Force du lancer
     public float rotationSmoothness = 15f; // Vitesse d'alignement
 
     public Quaternion respawnRotation = Quaternion.Euler(0, 0, 0); // Rotation fixe après réapparition
@@ -82,7 +82,7 @@ public class DartThrow : MonoBehaviour
 
     private IEnumerator ApplyGravitySmoothly()
     {
-        float duration = 1.5f;
+        float duration = 4f;
         float elapsedTime = 0f;
 
         while (elapsedTime < duration)
@@ -131,7 +131,7 @@ public class DartThrow : MonoBehaviour
 
 
         // Réinitialiser la position et la rotation
-        transform.position = new Vector3(-1.90910006f, 0.574800014f, -1.34679997f);
+        transform.position = new Vector3(3.59100008f, 3.227f, -6.01200008f);
         transform.rotation = respawnRotation;
 
         Debug.Log("Apres Réapparition -> Position actuelle : " + transform.position);
