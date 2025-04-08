@@ -15,7 +15,7 @@ C:/Users/Max/Dart
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56862
+64891
 Successfully changed project path to: C:/Users/Max/Dart
 C:/Users/Max/Dart
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,19 +49,19 @@ C:/Users/Max/Dart
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [10484]  Target information:
+Player connection [37440]  Target information:
 
-Player connection [10484]  * "[IP] 192.168.1.149 [Port] 0 [Flags] 2 [Guid] 3097171088 [EditorId] 3097171088 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-8SDOOJ0) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [37440]  * "[IP] 192.168.1.149 [Port] 0 [Flags] 2 [Guid] 3826641524 [EditorId] 3826641524 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-8SDOOJ0) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [10484]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 3097171088 [EditorId] 3097171088 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-8SDOOJ0) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [37440]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 3826641524 [EditorId] 3826641524 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-8SDOOJ0) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [10484]  * "[IP] 192.168.137.1 [Port] 0 [Flags] 2 [Guid] 3097171088 [EditorId] 3097171088 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-8SDOOJ0) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [37440]  * "[IP] 192.168.137.1 [Port] 0 [Flags] 2 [Guid] 3826641524 [EditorId] 3826641524 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-8SDOOJ0) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [10484] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [10484] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [37440] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [37440] Host joined alternative multi-casting on [225.0.0.222:34997]...
 Input System module state changed to: Initialized.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-Refreshing native plugins compatible for Editor in 24.18 ms, found 9 plugins.
+Refreshing native plugins compatible for Editor in 24.23 ms, found 9 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.57f1 (9d8bd91adc0a)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.57f1/Editor/Data/Resources/UnitySubsystems
@@ -77,7 +77,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.57f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.57f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.57f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56084
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56156
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.57f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
@@ -89,8 +89,8 @@ Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.57f1/
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.57f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.57f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.57f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
-Registered in 0.025472 seconds.
-- Loaded All Assemblies, in  0.367 seconds
+Registered in 0.024592 seconds.
+- Loaded All Assemblies, in  0.369 seconds
 Native extension for UWP target not found
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
@@ -103,35 +103,35 @@ Native extension for VisionOS target not found
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 202 ms
+Android Extension - Scanning For ADB Devices 199 ms
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.532 seconds
-Domain Reload Profiling: 896ms
+- Finished resetting the current domain, in  0.527 seconds
+Domain Reload Profiling: 893ms
 	BeginReloadAssembly (100ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (31ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (75ms)
-	LoadAllAssembliesAndSetupDomain (148ms)
-		LoadAssemblies (101ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (73ms)
+	LoadAllAssembliesAndSetupDomain (147ms)
+		LoadAssemblies (100ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
 		AnalyzeDomain (143ms)
 			TypeCache.Refresh (142ms)
-				TypeCache.ScanAssembly (129ms)
+				TypeCache.ScanAssembly (127ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (532ms)
+	FinalizeReload (527ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (488ms)
+		SetupLoadedEditorAssemblies (483ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (330ms)
+			InitializePlatformSupportModulesInManaged (324ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
@@ -145,7 +145,7 @@ Domain Reload Profiling: 896ms
 Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.727 seconds
+- Loaded All Assemblies, in  0.723 seconds
 Native extension for UWP target not found
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
@@ -167,47 +167,47 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.818 seconds
-Domain Reload Profiling: 1539ms
-	BeginReloadAssembly (139ms)
+- Finished resetting the current domain, in  0.803 seconds
+Domain Reload Profiling: 1521ms
+	BeginReloadAssembly (141ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (19ms)
+		CreateAndSetChildDomain (20ms)
 	RebuildCommonClasses (30ms)
 	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (40ms)
-	LoadAllAssembliesAndSetupDomain (503ms)
-		LoadAssemblies (378ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (495ms)
+		LoadAssemblies (370ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (206ms)
+		AnalyzeDomain (207ms)
 			TypeCache.Refresh (174ms)
 				TypeCache.ScanAssembly (157ms)
-			ScanForSourceGeneratedMonoScriptInfo (23ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (818ms)
+			ScanForSourceGeneratedMonoScriptInfo (22ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (803ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (653ms)
+		SetupLoadedEditorAssemblies (639ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (53ms)
-			SetLoadedEditorAssemblies (5ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (121ms)
-			ProcessInitializeOnLoadAttributes (407ms)
-			ProcessInitializeOnLoadMethodAttributes (57ms)
+			BeforeProcessingInitializeOnLoad (118ms)
+			ProcessInitializeOnLoadAttributes (397ms)
+			ProcessInitializeOnLoadMethodAttributes (58ms)
 			AfterProcessingInitializeOnLoad (9ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (5ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 13.41 ms, found 9 plugins.
+Refreshing native plugins compatible for Editor in 13.70 ms, found 9 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4741 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4742 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 83 unused Assets / (1.8 MB). Loaded Objects now: 5217.
 Memory consumption went from 170.6 MB to 168.8 MB.
-Total: 3.518600 ms (FindLiveObjects: 0.313300 ms CreateObjectMapping: 0.350000 ms MarkObjects: 2.451900 ms  DeleteObjects: 0.402900 ms)
+Total: 4.154500 ms (FindLiveObjects: 0.311200 ms CreateObjectMapping: 0.365600 ms MarkObjects: 3.130100 ms  DeleteObjects: 0.347000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -224,725 +224,46 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 104707.146446 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Prefabs/Picture Frames
-  artifactKey: Guid(22133a010a76a13459ed69fe514316ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Prefabs/Picture Frames using Guid(22133a010a76a13459ed69fe514316ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'f0c0f325573bc970adccc79b97307350') in 0.007995 seconds
+  Time since last request: 798981.635098 seconds.
+  path: Assets/SetTurnType.cs
+  artifactKey: Guid(f74a8336fcc946b428473bce93f62f69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SetTurnType.cs using Guid(f74a8336fcc946b428473bce93f62f69) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '152fa6cf9180a37a98adf4841f9b089f') in 0.002616 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 1.114367 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Prefabs/Picture Frames/Picture Frame 2.prefab
-  artifactKey: Guid(551881a4c936ce04faeeb80891604631) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Prefabs/Picture Frames/Picture Frame 2.prefab using Guid(551881a4c936ce04faeeb80891604631) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '1f5638199fb00a8e17d9e16b45eee470') in 0.086013 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
-========================================================================
-Received Import Request.
-  Time since last request: 0.495971 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Prefabs/Picture Frames/Picture Frame 4.prefab
-  artifactKey: Guid(cef386803c237c54598a3105a99e2770) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Prefabs/Picture Frames/Picture Frame 4.prefab using Guid(cef386803c237c54598a3105a99e2770) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'd5e74b0a187bcaac15ebbc6f52321f0d') in 0.012096 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 17
-========================================================================
-Received Import Request.
-  Time since last request: 0.941036 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Prefabs/Picture Frames/Picture Frame 5.prefab
-  artifactKey: Guid(6464654b3c16e6c4bb670d96b4303357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Prefabs/Picture Frames/Picture Frame 5.prefab using Guid(6464654b3c16e6c4bb670d96b4303357) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'ad6f020c9a60cd18cc3035b0163cebc6') in 0.011944 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 17
-========================================================================
-Received Import Request.
-  Time since last request: 1.714683 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Prefabs/Picture Frames/Picture Frame 1.prefab
-  artifactKey: Guid(419c7d002f75f2b4885db4b04f69ec90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Prefabs/Picture Frames/Picture Frame 1.prefab using Guid(419c7d002f75f2b4885db4b04f69ec90) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'd9a656a5d57888527bcf44fddf9ef10a') in 0.011710 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
-========================================================================
-Received Import Request.
-  Time since last request: 5.580355 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Prefabs/Picture Frames/Picture Frame 3.prefab
-  artifactKey: Guid(dd44daf5ad388484d85cff58ba4dc4f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Prefabs/Picture Frames/Picture Frame 3.prefab using Guid(dd44daf5ad388484d85cff58ba4dc4f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '8b4dd6a274ee98201c3bb4c2007ceaff') in 0.011964 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 17
-========================================================================
-Received Import Request.
-  Time since last request: 2.813954 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Prefabs/Light Sources/Candlestick 2.prefab
-  artifactKey: Guid(03222cd9e6bea3d49b5e3d58e5fc2a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Prefabs/Light Sources/Candlestick 2.prefab using Guid(03222cd9e6bea3d49b5e3d58e5fc2a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '6b4f4d7ebdc63b7454f79260df9674d2') in 0.016747 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 42
-========================================================================
-Received Import Request.
-  Time since last request: 0.743016 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Prefabs/Light Sources/Candlestick 1.prefab
-  artifactKey: Guid(add042306713f2c4b8147dc5c2a11527) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Prefabs/Light Sources/Candlestick 1.prefab using Guid(add042306713f2c4b8147dc5c2a11527) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'c634565c5a6cfdbb72b6bcb67c59c405') in 0.011924 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 33
-========================================================================
-Received Import Request.
-  Time since last request: 2.267889 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Prefabs/Light Sources/Chandelier.prefab
-  artifactKey: Guid(d47826aec3e298a499d4957dd517e6c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Prefabs/Light Sources/Chandelier.prefab using Guid(d47826aec3e298a499d4957dd517e6c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'e3ff223636817a66c887fcca8a48ed46') in 0.012754 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 43
-========================================================================
-Received Import Request.
-  Time since last request: 5.109055 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Prefabs/Hang on Wall/Hanging Scroll 1.prefab
-  artifactKey: Guid(3e03224e2da992946af83b6979daf271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Prefabs/Hang on Wall/Hanging Scroll 1.prefab using Guid(3e03224e2da992946af83b6979daf271) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '3fc7613832f58daa93fff6a7d31286b6') in 0.013151 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 20
-========================================================================
-Received Import Request.
-  Time since last request: 1.042127 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Prefabs/Hang on Wall/Corkboard.prefab
-  artifactKey: Guid(e9aaaaebfd005fa4880623a4ba30c781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Prefabs/Hang on Wall/Corkboard.prefab using Guid(e9aaaaebfd005fa4880623a4ba30c781) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '7aa974c1a6fd8d17115cb26932e45695') in 0.013686 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 25
-========================================================================
-Received Import Request.
-  Time since last request: 1.639628 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Prefabs/Hang on Wall/Hanging Scroll 2.prefab
-  artifactKey: Guid(aabf948c864fbd54d83f39b2be39b725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Prefabs/Hang on Wall/Hanging Scroll 2.prefab using Guid(aabf948c864fbd54d83f39b2be39b725) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'c98efb8e7b8cb226d0970799ef7a896d') in 0.012327 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 20
-========================================================================
-Received Import Request.
-  Time since last request: 0.632008 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Prefabs/Hang on Wall/Hook.prefab
-  artifactKey: Guid(61add1a52c282b841bf9d1b1d6689f79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Prefabs/Hang on Wall/Hook.prefab using Guid(61add1a52c282b841bf9d1b1d6689f79) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '58afc4f6ecc1f46b61971f29c1823cbb') in 0.011873 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 17
-========================================================================
-Received Import Request.
-  Time since last request: 4.206441 seconds.
-  path: Assets/Fries and Seagull/Bar 02/BRP Sample Scene/LightingData.asset
-  artifactKey: Guid(a0eeb9667ad623147912c008b2103c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/BRP Sample Scene/LightingData.asset using Guid(a0eeb9667ad623147912c008b2103c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '729400aff3d432e89d37a19ddd538b86') in 0.001647 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 2.807083 seconds.
-  path: Assets/Fries and Seagull/Bar 02/BRP Sample Scene/ReflectionProbe-0.exr
-  artifactKey: Guid(3bfc708195fef1141b934dd73218f201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/BRP Sample Scene/ReflectionProbe-0.exr using Guid(3bfc708195fef1141b934dd73218f201) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'd9e8baf7ea2296fa2643f9282fb79413') in 0.020962 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 33.738869 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Scene Props/Scripts/Setup/FriesManagerBRP.cs
-  artifactKey: Guid(8f46b455363e54846b197e049cfa2d53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Scene Props/Scripts/Setup/FriesManagerBRP.cs using Guid(8f46b455363e54846b197e049cfa2d53) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '1f49bcc2209457e0a3c339854d0b30d9') in 0.000549 seconds
+  Time since last request: 1.241631 seconds.
+  path: Assets/XROffsetGrabInteractable.cs
+  artifactKey: Guid(3f02ba9f30e240a4c9ceae089fb9e474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/XROffsetGrabInteractable.cs using Guid(3f02ba9f30e240a4c9ceae089fb9e474) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '0172235f7d26e9d65b09d8f7dacfdc8c') in 0.000543 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 2.067717 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Scene Props/Scripts/Setup/FriesManagerURP.cs
-  artifactKey: Guid(281ea83024b141899b2705c087421631) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Scene Props/Scripts/Setup/FriesManagerURP.cs using Guid(281ea83024b141899b2705c087421631) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '638b6e55c20657462ce65974a7815623') in 0.000447 seconds
+  Time since last request: 5.013191 seconds.
+  path: Assets/GameMenuManager.cs
+  artifactKey: Guid(85f592a40cb06e74d8a61da451c843f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameMenuManager.cs using Guid(85f592a40cb06e74d8a61da451c843f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'e58e2ebdfe83728e2fb15ffc3af660c2') in 0.000415 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 35.062188 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Scene Props/Scripts/Setup/SetupScriptURP.cs
-  artifactKey: Guid(6ee23bc1f4d9436abdbd7c688eaf5da5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Scene Props/Scripts/Setup/SetupScriptURP.cs using Guid(6ee23bc1f4d9436abdbd7c688eaf5da5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'e65a1322cb6d6a9d5ae3e5157bba7ac7') in 0.000458 seconds
+  Time since last request: 38.948065 seconds.
+  path: Assets/DartThrow.cs
+  artifactKey: Guid(0ed29d219e6ca41449e8918646158537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DartThrow.cs using Guid(0ed29d219e6ca41449e8918646158537) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'd70100dd62c2591928e2455c07c2efa5') in 0.000427 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 37.696172 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Prefabs/Tables & Chairs/Chair 1.prefab
-  artifactKey: Guid(e058cac87bc97254195da76be77d83e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Prefabs/Tables & Chairs/Chair 1.prefab using Guid(e058cac87bc97254195da76be77d83e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '6ad872fd9d18e8a16a882464aa7387a7') in 0.013203 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 20
-========================================================================
-Received Import Request.
-  Time since last request: 2.343766 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Prefabs/Tables & Chairs/Chair 2.prefab
-  artifactKey: Guid(a842783c726810144a7403a0b72e9723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Prefabs/Tables & Chairs/Chair 2.prefab using Guid(a842783c726810144a7403a0b72e9723) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'f5c90c83e5ca8524170e727063588a3b') in 0.014424 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 27
-========================================================================
-Received Import Request.
-  Time since last request: 1.612197 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Prefabs/Tables & Chairs/Roundtable.prefab
-  artifactKey: Guid(95356d5fb12bf2f4888447f8374f77ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Prefabs/Tables & Chairs/Roundtable.prefab using Guid(95356d5fb12bf2f4888447f8374f77ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'ac94029b3d29d9e7b0d5ab3bd0a7b064') in 0.015395 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 19
-========================================================================
-Received Import Request.
-  Time since last request: 34.562722 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Prefabs/Tables & Chairs/Bar Stool.prefab
-  artifactKey: Guid(4722f8fbc1bb9b24eb1df990df499441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Prefabs/Tables & Chairs/Bar Stool.prefab using Guid(4722f8fbc1bb9b24eb1df990df499441) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '3a3f71b4bbe4644f6b56f283dc3495d9') in 0.013217 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 20
-========================================================================
-Received Import Request.
-  Time since last request: 3.892875 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Prefabs/Tables & Chairs/Table 2.prefab
-  artifactKey: Guid(800fb5855ba241c41bbbc2d10227c7ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Prefabs/Tables & Chairs/Table 2.prefab using Guid(800fb5855ba241c41bbbc2d10227c7ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'c989d08a1e0e6ed6760656eb2c76294f') in 0.012684 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 21
-========================================================================
-Received Import Request.
-  Time since last request: 1.088417 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Prefabs/Tables & Chairs/Table 1.prefab
-  artifactKey: Guid(8e86f903db7c55740b38edd37797d9f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Prefabs/Tables & Chairs/Table 1.prefab using Guid(8e86f903db7c55740b38edd37797d9f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '1bdad73518602271b1ae4e7957c4139e') in 0.013622 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 24
-========================================================================
-Received Import Request.
-  Time since last request: 4.181413 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Prefabs/Tables & Chairs/Bench.prefab
-  artifactKey: Guid(9db157cdf09cdaf4191d03ad49e269e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Prefabs/Tables & Chairs/Bench.prefab using Guid(9db157cdf09cdaf4191d03ad49e269e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'fbdcdeeaa4179e384036a0a1cb218fdd') in 0.012666 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 24
-========================================================================
-Received Import Request.
-  Time since last request: 3.659136 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Prefabs/Wine Bottles & Cups/Wine Bottle 2.prefab
-  artifactKey: Guid(2721147b0f285bb40a745d579e3d7974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Prefabs/Wine Bottles & Cups/Wine Bottle 2.prefab using Guid(2721147b0f285bb40a745d579e3d7974) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '1cc4068bed20d886fb386aba34c3ab46') in 0.012117 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 18
-========================================================================
-Received Import Request.
-  Time since last request: 1.505287 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Prefabs/Wine Bottles & Cups/Wine Bottle 1.prefab
-  artifactKey: Guid(3872d204beae82c4592656af26c4b85d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Prefabs/Wine Bottles & Cups/Wine Bottle 1.prefab using Guid(3872d204beae82c4592656af26c4b85d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'ac527e316c79e1a4ed022ea696a446b4') in 0.012101 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 19
-========================================================================
-Received Import Request.
-  Time since last request: 0.706230 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Prefabs/Wine Bottles & Cups/Wine Bottle 3.prefab
-  artifactKey: Guid(cb74cadc085d9b148b3f95048490e9bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Prefabs/Wine Bottles & Cups/Wine Bottle 3.prefab using Guid(cb74cadc085d9b148b3f95048490e9bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '3c7c46a0041d51a37a15bc5d2ac3d876') in 0.012212 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 19
-========================================================================
-Received Import Request.
-  Time since last request: 0.692212 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Prefabs/Wine Bottles & Cups/Wine Bottle 5.prefab
-  artifactKey: Guid(4d882a8778301c646b19e1c183e12e51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Prefabs/Wine Bottles & Cups/Wine Bottle 5.prefab using Guid(4d882a8778301c646b19e1c183e12e51) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'acc1504738fce4ac2a319a5e7c11aef6') in 0.012518 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 19
-========================================================================
-Received Import Request.
-  Time since last request: 1.876684 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Prefabs/Wine Bottles & Cups/Tankard.prefab
-  artifactKey: Guid(6d6b2e0253263264ebba8c8921fed9d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Prefabs/Wine Bottles & Cups/Tankard.prefab using Guid(6d6b2e0253263264ebba8c8921fed9d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'be1bef650307dc0634ac9580ec32a1d2') in 0.197154 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 30
-========================================================================
-Received Import Request.
-  Time since last request: 0.433349 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Prefabs/Wine Bottles & Cups/Cup.prefab
-  artifactKey: Guid(5d38da2e8af97684984ec8d093c3b378) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Prefabs/Wine Bottles & Cups/Cup.prefab using Guid(5d38da2e8af97684984ec8d093c3b378) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '4f0115d6d3cd2efcf48d4e730a625819') in 0.013490 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 30
-========================================================================
-Received Import Request.
-  Time since last request: 6.513253 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Prefabs/Hang on Wall/Wall-mounted Wine Rack.prefab
-  artifactKey: Guid(443d9871bcbb14742ba3a941636ee6dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Prefabs/Hang on Wall/Wall-mounted Wine Rack.prefab using Guid(443d9871bcbb14742ba3a941636ee6dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'e8a89d2c99a10f35b4850a6268280d54') in 0.012730 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 20
-========================================================================
-Received Import Request.
-  Time since last request: 26.402924 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Prefabs/Prefab Groups/Hanging Scrolls.prefab
-  artifactKey: Guid(7fe5f94586dba8a4c9f177655837c954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Prefabs/Prefab Groups/Hanging Scrolls.prefab using Guid(7fe5f94586dba8a4c9f177655837c954) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '2c2cce7fb2e7ffb6447f4b457383cb82') in 0.003008 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 21
-========================================================================
-Received Import Request.
-  Time since last request: 0.795406 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Prefabs/Prefab Groups/Picture Frames.prefab
-  artifactKey: Guid(6b707b75539ad04478120aaeb53bf3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Prefabs/Prefab Groups/Picture Frames.prefab using Guid(6b707b75539ad04478120aaeb53bf3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'a4a8bdd19dc998d6f7f425307673bd69') in 0.004109 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 40
-========================================================================
-Received Import Request.
-  Time since last request: 1.056934 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Prefabs/Prefab Groups/Single Person Chairs.prefab
-  artifactKey: Guid(1317ea00ccd19a244b4456a0406d5729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Prefabs/Prefab Groups/Single Person Chairs.prefab using Guid(1317ea00ccd19a244b4456a0406d5729) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '6eccf3817b048f359f615eae7af70c4c') in 0.004144 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 29
-========================================================================
-Received Import Request.
-  Time since last request: 1.028660 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Prefabs/Prefab Groups/Table Lights.prefab
-  artifactKey: Guid(f9cc7f65ab482224aad188557b2b0aa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Prefabs/Prefab Groups/Table Lights.prefab using Guid(f9cc7f65ab482224aad188557b2b0aa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '68e740e197b56bf5c367fba79626ec30') in 0.003106 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 45
-========================================================================
-Received Import Request.
-  Time since last request: 0.906194 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Prefabs/Prefab Groups/Tables.prefab
-  artifactKey: Guid(f5d627c68417b67418bbc67c24d740dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Prefabs/Prefab Groups/Tables.prefab using Guid(f5d627c68417b67418bbc67c24d740dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '50bb9de66fb9145fc07a716bd0ac14bc') in 0.003122 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 34
-========================================================================
-Received Import Request.
-  Time since last request: 0.782301 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Prefabs/Prefab Groups/Wines.prefab
-  artifactKey: Guid(7c8e838191234fa4f93237bfcb4bc0a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Prefabs/Prefab Groups/Wines.prefab using Guid(7c8e838191234fa4f93237bfcb4bc0a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '5aab7fdfe074332715066bd4b0fe65b3') in 0.004777 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 47
-========================================================================
-Received Import Request.
-  Time since last request: 3.753854 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Prefabs/Wine Bottles & Cups/Tankard 2.prefab
-  artifactKey: Guid(1a71053b01fd76844b2ce27e6ddaa142) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Prefabs/Wine Bottles & Cups/Tankard 2.prefab using Guid(1a71053b01fd76844b2ce27e6ddaa142) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'b16445493b34fdef89e2c2e205e88aa6') in 0.013319 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 30
-========================================================================
-Received Import Request.
-  Time since last request: 2.502974 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Prefabs/Wine Bottles & Cups/Wooden Goblet.prefab
-  artifactKey: Guid(5acb6db1a97d367478664c82fea3a82d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Prefabs/Wine Bottles & Cups/Wooden Goblet.prefab using Guid(5acb6db1a97d367478664c82fea3a82d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '222c74cedf07d68297459138fd840fc0') in 0.013208 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 31
-========================================================================
-Received Import Request.
-  Time since last request: 14.449257 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Prefabs/Prefab Groups/Cups.prefab
-  artifactKey: Guid(d849b6d6eecf2cf439af57421fedaeab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Prefabs/Prefab Groups/Cups.prefab using Guid(d849b6d6eecf2cf439af57421fedaeab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '740d404acfb60957790cf9b51c390229') in 0.004084 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 53
-========================================================================
-Received Import Request.
-  Time since last request: 62.264617 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Models/Bar.fbx
-  artifactKey: Guid(6f2efdad71f230f41a10581062411c01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Models/Bar.fbx using Guid(6f2efdad71f230f41a10581062411c01) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '7fd9f8cac22f80f8c135c8eab800ab60') in 0.108371 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 21
-========================================================================
-Received Import Request.
-  Time since last request: 75.200992 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Models/Bar Stool.fbx
-  artifactKey: Guid(a8d9d1ff2b56d7a4d913b39e48dc25f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Models/Bar Stool.fbx using Guid(a8d9d1ff2b56d7a4d913b39e48dc25f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '1175f8e932584b1950ae770323a231ac') in 0.042811 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 12
-========================================================================
-Received Import Request.
-  Time since last request: 15.214097 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Models/Tankard.fbx
-  artifactKey: Guid(7dd5562a5ac82104d9f14275ba6a9f67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Models/Tankard.fbx using Guid(7dd5562a5ac82104d9f14275ba6a9f67) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '7d3f37ee4cd343fb6dd10158bf105074') in 0.047214 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 18
-========================================================================
-Received Import Request.
-  Time since last request: 3.258015 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Models/Wall-mounted Wine Rack.fbx
-  artifactKey: Guid(8a8b5b3b4399ad9458699dbbf14b796e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Models/Wall-mounted Wine Rack.fbx using Guid(8a8b5b3b4399ad9458699dbbf14b796e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'c27846923d87804b863a823dfc718bb9') in 0.046067 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 12
-========================================================================
-Received Import Request.
-  Time since last request: 0.361774 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Models/Tankard 2.fbx
-  artifactKey: Guid(9351726f203ccd9498512d8b2a32a92f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Models/Tankard 2.fbx using Guid(9351726f203ccd9498512d8b2a32a92f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '44a2634139e50b873a73c8760e25a4e8') in 0.052029 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 17
-========================================================================
-Received Import Request.
-  Time since last request: 1.521218 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Models/Roundtable.fbx
-  artifactKey: Guid(70d6e31f877edf6478d1e23aadda0dcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Models/Roundtable.fbx using Guid(70d6e31f877edf6478d1e23aadda0dcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'f8f1adac6543217c1030a74b7ead74ae') in 0.035063 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 0.945429 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Models/Small Barrel.fbx
-  artifactKey: Guid(d36aa14ab870b5e4d8a03f487dad9a3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Models/Small Barrel.fbx using Guid(d36aa14ab870b5e4d8a03f487dad9a3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '83d25dca8eea960d00ff847083779b6c') in 0.046948 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 12
-========================================================================
-Received Import Request.
-  Time since last request: 1.710678 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Models/Snow Ground.fbx
-  artifactKey: Guid(f7bc0304a6fba4c47adf2633b5d03c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Models/Snow Ground.fbx using Guid(f7bc0304a6fba4c47adf2633b5d03c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '84819d8d65f5559b83d06386cc309620') in 0.243768 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 41
-========================================================================
-Received Import Request.
-  Time since last request: 23.441753 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Models/Picture Frame 5.fbx
-  artifactKey: Guid(cc52ce03b5f995845bb3b0158d3e1d68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Models/Picture Frame 5.fbx using Guid(cc52ce03b5f995845bb3b0158d3e1d68) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'da355b85200f12b9d64faf1e29372e4e') in 0.024542 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.761645 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Models/Picture Frame 4.fbx
-  artifactKey: Guid(3689847b93a83de4daaef47e39bf9f5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Models/Picture Frame 4.fbx using Guid(3689847b93a83de4daaef47e39bf9f5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '56f57de69ef97e6ae3b142e9cb9711ad') in 0.028909 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.722164 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Models/Picture Frame 3.fbx
-  artifactKey: Guid(5d99489e64b4013438402e74ae151aa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Models/Picture Frame 3.fbx using Guid(5d99489e64b4013438402e74ae151aa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '4e14eca49194dbf92ab49638321c0ce0') in 0.020894 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.797108 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Models/Picture Frame 2.fbx
-  artifactKey: Guid(e1a129b0a8a1eb24e9e34ee07259e1f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Models/Picture Frame 2.fbx using Guid(e1a129b0a8a1eb24e9e34ee07259e1f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '2b5ed153ae00a49feb6d83e818532058') in 0.018014 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.559004 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Models/Picture Frame 1.fbx
-  artifactKey: Guid(f98b0147f4c6b31448735586b2060909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Models/Picture Frame 1.fbx using Guid(f98b0147f4c6b31448735586b2060909) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '745a190aa98e925b03dea06bc13fc054') in 0.016968 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 2.043989 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Models/Room.fbx
-  artifactKey: Guid(1a8a9b79080f1af4a9fff8b5ce1163f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Models/Room.fbx using Guid(1a8a9b79080f1af4a9fff8b5ce1163f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'adf6742cc39b912241cd713a15e7a05f') in 0.102914 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 31
-========================================================================
-Received Import Request.
-  Time since last request: 42.334824 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Models/Placemat.fbx
-  artifactKey: Guid(dd8f34dd190140b41b563e5a50c7327a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Models/Placemat.fbx using Guid(dd8f34dd190140b41b563e5a50c7327a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'cbd0c8bedb7e8821d698ac9969d7ee10') in 0.025050 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 5.584285 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Models/Fence.fbx
-  artifactKey: Guid(962245fdbaf4ae84aa833037e0ee9196) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Models/Fence.fbx using Guid(962245fdbaf4ae84aa833037e0ee9196) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'dd13c5fd2daa0947970b58907b98845a') in 0.030104 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 12.996460 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Models/Materials
-  artifactKey: Guid(a8e30653f4f5411449d7cd74f6e4e3ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Models/Materials using Guid(a8e30653f4f5411449d7cd74f6e4e3ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'd80823b2de49fa7dad4d73b8b88354de') in 0.005412 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 168.368755 seconds.
-  path: Assets/Fries and Seagull/Bar 02/Models/Large Barrel.fbx
-  artifactKey: Guid(58e7e88be524a8645bca58d0595a9c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fries and Seagull/Bar 02/Models/Large Barrel.fbx using Guid(58e7e88be524a8645bca58d0595a9c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '3ab59568099d0d73908db5c10957dc8a') in 0.040165 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 12
-========================================================================
-Received Import Request.
-  Time since last request: 85.313683 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(60aa99b76ecf301458fae638c05f9823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(60aa99b76ecf301458fae638c05f9823) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'd7e4121a1cfbf08123aafe73a74e73ec') in 0.000489 seconds
+  Time since last request: 26.213143 seconds.
+  path: Assets/AnimateHandOnInput.cs
+  artifactKey: Guid(12962046cca01b34fa9cdcb273bde468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AnimateHandOnInput.cs using Guid(12962046cca01b34fa9cdcb273bde468) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'db2380033b2fa0fe210f74e1db833c1b') in 0.000433 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0

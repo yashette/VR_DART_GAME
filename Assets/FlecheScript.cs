@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class FlecheScript : MonoBehaviour
 {
+    public ScoreManager scoreManager;
+    public int pointsParFleche = 50;
+
     // Update is called once per frame
     void Update()
     {
@@ -44,6 +47,12 @@ public class FlecheScript : MonoBehaviour
 
                 // Fixer la flèche à la cible
                 transform.SetParent(collision.transform);
+
+                // Mise à jour du score
+                if (scoreManager != null)
+                {
+                    scoreManager.SoustrairePoints(pointsParFleche);
+                }
 
             }
 
