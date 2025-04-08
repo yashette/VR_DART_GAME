@@ -12,19 +12,18 @@ public class DartThrow : MonoBehaviour
 
     public Transform pointHP;  // Pointe de la fléchette (avant)
     public Transform flightHP; // Ailette (arrière)
-    public float throwForceMultiplier = 5f; // Force du lancer
-    public float rotationSmoothness = 15f; // Vitesse d'alignement
+    public float throwForceMultiplier = 5f;
+    public float rotationSmoothness = 15f;
 
-    public Quaternion respawnRotation = Quaternion.Euler(0, 0, 0); // Rotation fixe après réapparition
+    public Quaternion respawnRotation = Quaternion.Euler(0, 0, 0); // Rotation après réapparition
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         grabInteractable = GetComponent<XRGrabInteractable>();
 
-        rb.isKinematic = true; // Empêcher la gravité au début
+        rb.isKinematic = true;
 
-        // Associer les événements de grab
         grabInteractable.selectEntered.AddListener(OnGrab);
         grabInteractable.selectExited.AddListener(OnRelease);
     }
@@ -33,7 +32,6 @@ public class DartThrow : MonoBehaviour
     {
         if (isHeld)
         {
-            // Calculer la vitesse de déplacement uniquement sur l'axe horizontal
             Vector3 currentPosition = transform.position;
             velocity = (currentPosition - lastPosition) / Time.deltaTime;
             lastPosition = currentPosition;
@@ -52,99 +50,70 @@ public class DartThrow : MonoBehaviour
     private void OnRelease(SelectExitEventArgs args)
     {
         isHeld = false;
-
-        // Désactiver isKinematic AVANT d'appliquer la vélocité
         rb.isKinematic = false;
-        rb.useGravity = false;
+        rb.useGravity = true;
 
-        // Attendre une frame pour éviter l'erreur de kinematic
         StartCoroutine(ApplyThrowVelocity());
-
-        // Démarrer le processus de disparition et de réapparition
         StartCoroutine(DestroyAndRespawnDart());
     }
 
     private IEnumerator ApplyThrowVelocity()
     {
-        yield return null; // Attendre une frame pour que isKinematic soit bien désactivé
+        yield return null;
 
         Vector3 throwDirection = velocity.normalized;
-        throwDirection.y = 0; // Bloquer le mouvement vertical
 
         rb.velocity = throwDirection * throwForceMultiplier;
-        rb.angularVelocity = Vector3.zero; // Empêcher toute rotation involontaire
+        rb.angularVelocity = Vector3.zero;
 
-        Debug.Log("DartThrow: Vitesse appliquée au lancer -> " + rb.velocity);
-
-        AlignDartHorizontally();
-        StartCoroutine(ApplyGravitySmoothly());
-    }
-
-    private IEnumerator ApplyGravitySmoothly()
-    {
-        float duration = 4f;
-        float elapsedTime = 0f;
-
-        while (elapsedTime < duration)
-        {
-            elapsedTime += Time.deltaTime;
-            rb.AddForce(Vector3.down * (elapsedTime / duration) * 9.81f, ForceMode.Acceleration);
-            yield return null;
-        }
-
-        rb.useGravity = true;
+        Debug.Log("DartThrow: Vitesse appliquée -> " + rb.velocity);
     }
 
     void FixedUpdate()
     {
         if (!isHeld && rb.velocity.magnitude > 0.1f)
         {
-            // Appliquer l'alignement horizontal à chaque frame du vol
-            AlignDartHorizontally();
+            AlignDartWithVelocity();
         }
     }
 
-    private void AlignDartHorizontally()
+    private void AlignDartWithVelocity()
     {
-        if (pointHP == null || flightHP == null)
-            return;
+        if (rb.velocity.sqrMagnitude > 0.01f)
+        {
+            Vector3 direction = rb.velocity.normalized;
 
-        // Calculer la direction entre la pointe et l'ailette
-        Vector3 forwardDirection = (pointHP.position - flightHP.position).normalized;
+            // Rotation de base vers la direction de la trajectoire
+            Quaternion baseRotation = Quaternion.LookRotation(direction, Vector3.up);
 
-        // Bloquer la rotation verticale pour garder la fléchette horizontale
-        forwardDirection.y = 0;
+            // Correction car le modèle est orienté vers le haut (Y+) au lieu de l’avant (Z+)
+            Quaternion correctiveRotation = Quaternion.Euler(-90f, 0f, 0f); // ajuste ici si besoin
+            Quaternion targetRotation = baseRotation * correctiveRotation;
 
-        // Appliquer la rotation forcée pour maintenir l'orientation horizontale
-        Quaternion targetRotation = Quaternion.LookRotation(forwardDirection, Vector3.up);
-        transform.rotation = targetRotation;
+            // Appliquer en douceur
+            rb.MoveRotation(Quaternion.Slerp(rb.rotation, targetRotation, Time.fixedDeltaTime * rotationSmoothness));
+        }
     }
 
     private IEnumerator DestroyAndRespawnDart()
     {
-        yield return new WaitForSeconds(5f); // Attendre 5 secondes avant disparition
+        yield return new WaitForSeconds(5f);
 
-        // Désactiver l'interaction pour éviter les bugs
         grabInteractable.enabled = false;
 
-        Debug.Log("Avant Réapparition -> Position actuelle : " + transform.position);
+        Debug.Log("Avant réapparition -> Position : " + transform.position);
 
-
-        // Réinitialiser la position et la rotation
         transform.position = new Vector3(3.59100008f, 3.227f, -6.01200008f);
         transform.rotation = respawnRotation;
 
-        Debug.Log("Apres Réapparition -> Position actuelle : " + transform.position);
+        Debug.Log("Après réapparition -> Position : " + transform.position);
 
-
-        // Réinitialiser la physique
         rb.isKinematic = true;
         rb.velocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
 
-        yield return new WaitForSeconds(0.5f); // Petite pause pour éviter tout bug visuel
+        yield return new WaitForSeconds(0.5f);
 
-        // Réactiver l'interaction après réapparition
         grabInteractable.enabled = true;
     }
 }
