@@ -473,7 +473,6 @@ private void OnGrab(SelectEnterEventArgs args)
 private void OnRelease(SelectExitEventArgs args)
 {
     isHeld = false;
-    rb.isKinematic = false;
     rb.useGravity = true;
 
     StartCoroutine(ApplyThrowVelocity());
@@ -483,6 +482,8 @@ private void OnRelease(SelectExitEventArgs args)
 private IEnumerator ApplyThrowVelocity()
 {
     yield return null;
+
+    rb.isKinematic = false;
 
     Vector3 throwDirection = velocity.normalized;
 
