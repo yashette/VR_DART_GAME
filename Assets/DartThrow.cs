@@ -101,12 +101,8 @@ public class DartThrow : MonoBehaviour
 
         grabInteractable.enabled = false;
 
-        Debug.Log("Avant réapparition -> Position : " + transform.position);
-
-        transform.position = new Vector3(3.59100008f, 3.227f, -6.01200008f);
+        transform.position = new Vector3(1.676f, 3.67199993f, -0.170000002f);
         transform.rotation = respawnRotation;
-
-        Debug.Log("Après réapparition -> Position : " + transform.position);
 
         rb.isKinematic = true;
         rb.velocity = Vector3.zero;

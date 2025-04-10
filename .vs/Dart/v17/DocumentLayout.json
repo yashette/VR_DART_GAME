@@ -5,18 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{159D45A4-431C-E35D-3325-D930AC084F29}|Assembly-CSharp.csproj|c:\\users\\max\\dart\\assets\\flechescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{159D45A4-431C-E35D-3325-D930AC084F29}|Assembly-CSharp.csproj|solutionrelative:assets\\flechescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{159D45A4-431C-E35D-3325-D930AC084F29}|Assembly-CSharp.csproj|C:\\Users\\Max\\Dart\\assets\\dartthrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{159D45A4-431C-E35D-3325-D930AC084F29}|Assembly-CSharp.csproj|solutionrelative:assets\\dartthrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{159D45A4-431C-E35D-3325-D930AC084F29}|Assembly-CSharp.csproj|C:\\Users\\Max\\Dart\\assets\\gamemenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{159D45A4-431C-E35D-3325-D930AC084F29}|Assembly-CSharp.csproj|solutionrelative:assets\\gamemenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{159D45A4-431C-E35D-3325-D930AC084F29}|Assembly-CSharp.csproj|C:\\Users\\Max\\Dart\\assets\\scoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{159D45A4-431C-E35D-3325-D930AC084F29}|Assembly-CSharp.csproj|solutionrelative:assets\\scoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,32 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ScoreManager.cs",
-              "DocumentMoniker": "C:\\Users\\Max\\Dart\\Assets\\ScoreManager.cs",
-              "RelativeDocumentMoniker": "Assets\\ScoreManager.cs",
-              "ToolTip": "C:\\Users\\Max\\Dart\\Assets\\ScoreManager.cs",
-              "RelativeToolTip": "Assets\\ScoreManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T09:03:11.249Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GameMenuManager.cs",
-              "DocumentMoniker": "C:\\Users\\Max\\Dart\\Assets\\GameMenuManager.cs",
-              "RelativeDocumentMoniker": "Assets\\GameMenuManager.cs",
-              "ToolTip": "C:\\Users\\Max\\Dart\\Assets\\GameMenuManager.cs",
-              "RelativeToolTip": "Assets\\GameMenuManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T08:08:56.307Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -60,22 +24,10 @@
               "RelativeDocumentMoniker": "Assets\\FlecheScript.cs",
               "ToolTip": "C:\\Users\\Max\\Dart\\Assets\\FlecheScript.cs",
               "RelativeToolTip": "Assets\\FlecheScript.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAqwC0AAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T10:47:18.117Z",
+              "WhenOpened": "2025-04-10T17:45:03.183Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DartThrow.cs",
-              "DocumentMoniker": "C:\\Users\\Max\\Dart\\Assets\\DartThrow.cs",
-              "RelativeDocumentMoniker": "Assets\\DartThrow.cs",
-              "ToolTip": "C:\\Users\\Max\\Dart\\Assets\\DartThrow.cs",
-              "RelativeToolTip": "Assets\\DartThrow.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAYwGEAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T18:24:57.666Z"
             }
           ]
         }

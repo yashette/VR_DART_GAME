@@ -1,22 +1,61 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class FlecheScript : MonoBehaviour
 {
+
+    //debut ajout
+    private Rigidbody rb;
+    private bool isHeld = false;
+    private Vector3 lastPosition;
+    private Vector3 velocity;
+    private XRGrabInteractable grabInteractable;
+
+    public Transform pointHP;  // Pointe de la fléchette (avant)
+    public Transform flightHP; // Ailette (arrière)
+    public float throwForceMultiplier = 10f;
+    public float rotationSmoothness = 15f;
+
+    public Quaternion respawnRotation = Quaternion.Euler(0, 0, 0); // Rotation après réapparition
+    //fin ajout
+
+
     public ScoreManager scoreManager;
-    public int pointsParFleche = 50;
+    public GameObject floatingScorePrefab;
+    private bool hasScored = false;
 
     // Update is called once per frame
     void Update()
     {
-        
+
+        if (isHeld)
+        {
+            Vector3 currentPosition = transform.position;
+            velocity = (currentPosition - lastPosition) / Time.deltaTime;
+            lastPosition = currentPosition;
+        }
+
     }
 
     public Transform pointeFleche; // Référence à POINT_HP
 
     void Start()
     {
+
+        //debut
+        rb = GetComponent<Rigidbody>();
+        grabInteractable = GetComponent<XRGrabInteractable>();
+
+        rb.isKinematic = true;
+
+        grabInteractable.selectEntered.AddListener(OnGrab);
+        grabInteractable.selectExited.AddListener(OnRelease);
+
+        //fin
+
+
         if (pointeFleche == null)
         {
             // Recherche automatique de POINT_HP si elle n'est pas assignée
@@ -27,14 +66,20 @@ public class FlecheScript : MonoBehaviour
                 Debug.LogError("POINT_HP non trouvé ! Vérifie que le nom est correct.");
             }
         }
+
     }
+
+
 
     void OnCollisionEnter(Collision collision)
     {
+        if (hasScored) return;
+
         if ( collision.gameObject.CompareTag("Cible")) // Vérifie que la cible est touchée
         {
             if (pointeFleche != null && collision.contacts[0].thisCollider.gameObject == pointeFleche.gameObject)
             {
+                hasScored = true;
 
                 // Désactiver la physique de la flèche
                 Rigidbody rb = GetComponent<Rigidbody>();
@@ -48,12 +93,24 @@ public class FlecheScript : MonoBehaviour
                 // Fixer la flèche à la cible
                 transform.SetParent(collision.transform);
 
+                
+
                 int score = GetScore(collision); // Appel de la méthode GetScore
 
                 // Mise à jour du score
                 if (scoreManager != null)
                 {
                     scoreManager.SoustrairePoints(score);
+                }
+
+                if (floatingScorePrefab != null)
+                {
+                    Vector3 spawnPos = pointeFleche.position + Vector3.up * 0.1f;
+                    GameObject popup = Instantiate(floatingScorePrefab, spawnPos, Quaternion.identity);
+
+                    FloatingScore floatScript = popup.GetComponent<FloatingScore>();
+                    if (floatScript != null)
+                        floatScript.SetScore(score);
                 }
 
             }
@@ -400,4 +457,84 @@ public class FlecheScript : MonoBehaviour
         return score;
     }
 
+
+
+
+private void OnGrab(SelectEnterEventArgs args)
+{
+    isHeld = true;
+    rb.isKinematic = true;
+    rb.velocity = Vector3.zero;
+    rb.angularVelocity = Vector3.zero;
+    lastPosition = transform.position;
+        hasScored = false;
+    }
+
+private void OnRelease(SelectExitEventArgs args)
+{
+    isHeld = false;
+    rb.isKinematic = false;
+    rb.useGravity = true;
+
+    StartCoroutine(ApplyThrowVelocity());
+    StartCoroutine(DestroyAndRespawnDart());
 }
+
+private IEnumerator ApplyThrowVelocity()
+{
+    yield return null;
+
+    Vector3 throwDirection = velocity.normalized;
+
+    rb.velocity = throwDirection * throwForceMultiplier;
+    rb.angularVelocity = Vector3.zero;
+
+    Debug.Log("DartThrow: Vitesse appliquée -> " + rb.velocity);
+}
+
+void FixedUpdate()
+{
+    if (!isHeld && rb.velocity.magnitude > 0.1f)
+    {
+        AlignDartWithVelocity();
+    }
+}
+
+private void AlignDartWithVelocity()
+{
+    if (rb.velocity.sqrMagnitude > 0.01f)
+    {
+        Vector3 direction = rb.velocity.normalized;
+
+        // Rotation de base vers la direction de la trajectoire
+        Quaternion baseRotation = Quaternion.LookRotation(direction, Vector3.up);
+
+        // Correction car le modèle est orienté vers le haut (Y+) au lieu de l’avant (Z+)
+        Quaternion correctiveRotation = Quaternion.Euler(-90f, 0f, 0f); // ajuste ici si besoin
+        Quaternion targetRotation = baseRotation * correctiveRotation;
+
+        // Appliquer en douceur
+        rb.MoveRotation(Quaternion.Slerp(rb.rotation, targetRotation, Time.fixedDeltaTime * rotationSmoothness));
+    }
+}
+
+private IEnumerator DestroyAndRespawnDart()
+{
+    yield return new WaitForSeconds(5f);
+
+    grabInteractable.enabled = false;
+
+    transform.position = new Vector3(1.676f, 3.67199993f, -0.170000002f);
+    transform.rotation = respawnRotation;
+
+    rb.isKinematic = true;
+    rb.velocity = Vector3.zero;
+    rb.angularVelocity = Vector3.zero;
+
+    yield return new WaitForSeconds(0.5f);
+
+    grabInteractable.enabled = true;
+}
+
+}
+
