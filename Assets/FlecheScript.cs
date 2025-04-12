@@ -527,6 +527,7 @@ private IEnumerator DestroyAndRespawnDart()
 
     transform.position = new Vector3(1.676f, 3.67199993f, -0.170000002f);
     transform.rotation = respawnRotation;
+    transform.SetParent(null);
 
     rb.isKinematic = true;
     rb.velocity = Vector3.zero;
