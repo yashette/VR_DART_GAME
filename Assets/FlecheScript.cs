@@ -23,6 +23,7 @@ public class FlecheScript : MonoBehaviour
 
 
     public ScoreManager scoreManager;
+    public GameManager gameManager;
     public GameObject floatingScorePrefab;
     private bool hasScored = false;
 
@@ -98,9 +99,14 @@ public class FlecheScript : MonoBehaviour
                 int score = GetScore(collision); // Appel de la méthode GetScore
 
                 // Mise à jour du score
-                if (scoreManager != null)
+                // if (scoreManager != null)
+                // {
+                //  scoreManager.SoustrairePoints(score);
+                // }
+
+                if (gameManager != null)
                 {
-                    scoreManager.SoustrairePoints(score);
+                    gameManager.RegisterThrow(score);
                 }
 
                 if (floatingScorePrefab != null)

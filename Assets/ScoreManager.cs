@@ -8,6 +8,8 @@ public class ScoreManager : MonoBehaviour
     public int initialScore;
     public TMP_Text scoreText;  // Référence au texte UI
 
+
+
     void Start()
     {
         SetPoints(301);
