@@ -3471,7 +3471,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Tour of : Joueur X'
+  m_text: Player 1's turn
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8133,11 +8133,10 @@ MonoBehaviour:
   flightHP: {fileID: 0}
   throwForceMultiplier: 10
   rotationSmoothness: 15
+  pointeFleche: {fileID: 0}
   respawnRotation: {x: 0, y: 0, z: 0, w: 1}
-  scoreManager: {fileID: 0}
   gameManager: {fileID: 167179652}
   floatingScorePrefab: {fileID: 6696158028340558763, guid: d1eb4209b48e5c34cae35ef5fbd50ab3, type: 3}
-  pointeFleche: {fileID: 0}
 --- !u!1 &1036041232
 GameObject:
   m_ObjectHideFlags: 0
@@ -16456,7 +16455,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4663636688441688585, guid: 14ffbfd4451531244822c12986b59dca, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.676
+      value: 7.079
       objectReference: {fileID: 0}
     - target: {fileID: 4663636688441688585, guid: 14ffbfd4451531244822c12986b59dca, type: 3}
       propertyPath: m_LocalPosition.y
@@ -16464,7 +16463,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4663636688441688585, guid: 14ffbfd4451531244822c12986b59dca, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.17
+      value: 6.205
       objectReference: {fileID: 0}
     - target: {fileID: 4663636688441688585, guid: 14ffbfd4451531244822c12986b59dca, type: 3}
       propertyPath: m_LocalRotation.w
@@ -18458,7 +18457,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 12, y: 5.65}
+  m_AnchoredPosition: {x: 10.45, y: 5.21}
   m_SizeDelta: {x: 640, y: 382}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2035709055 stripped

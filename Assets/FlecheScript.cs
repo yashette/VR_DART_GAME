@@ -1,36 +1,35 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
+// Script attaché à une fléchette pour gérer les interactions VR, les collisions, le score, et le respawn
 public class FlecheScript : MonoBehaviour
 {
 
-    //debut ajout
-    private Rigidbody rb;
-    private bool isHeld = false;
-    private Vector3 lastPosition;
-    private Vector3 velocity;
-    private XRGrabInteractable grabInteractable;
+    // === Variables pour le lancer ===
+    private Rigidbody rb;   // Composant Rigidbody pour la physique
+    private bool isHeld = false;  // Indique si la fléchette est en main
+    private Vector3 lastPosition; // Position précédente utilisée pour calculer la vélocité
+    private Vector3 velocity; // Vitesse estimée de lancer
+    private XRGrabInteractable grabInteractable; // Référence au composant d'interaction XR
 
-    public Transform pointHP;  // Pointe de la fléchette (avant)
+    public Transform pointHP;  // Pointe avant de la fléchette (pour détecter les bonnes collisions)
     public Transform flightHP; // Ailette (arrière)
-    public float throwForceMultiplier = 10f;
-    public float rotationSmoothness = 15f;
+    public float throwForceMultiplier = 10f; // Force appliquée lors du lancer
+    public float rotationSmoothness = 15f; // Lissage de la rotation pendant le vol
+    public Transform pointeFleche; // Référence à POINT_HP
 
     public Quaternion respawnRotation = Quaternion.Euler(0, 0, 0); // Rotation après réapparition
-    //fin ajout
 
-
-    public ScoreManager scoreManager;
-    public GameManager gameManager;
-    public GameObject floatingScorePrefab;
-    private bool hasScored = false;
+    // === Gestion du score et des effets ===
+    public GameManager gameManager; // Référence au GameManager pour enregistrer le score
+    public GameObject floatingScorePrefab; // Prefab à afficher lors du score
+    private bool hasScored = false; // Empêche de scorer plusieurs fois
 
     // Update is called once per frame
     void Update()
     {
-
+        // Pendant que la fléchette est tenue, on calcule sa vitesse
         if (isHeld)
         {
             Vector3 currentPosition = transform.position;
@@ -40,32 +39,25 @@ public class FlecheScript : MonoBehaviour
 
     }
 
-    public Transform pointeFleche; // Référence à POINT_HP
 
     void Start()
     {
 
-        //debut
+        // Initialisation des composants
         rb = GetComponent<Rigidbody>();
         grabInteractable = GetComponent<XRGrabInteractable>();
-
         rb.isKinematic = true;
 
+        // Écoute les événements de prise et de lâcher
         grabInteractable.selectEntered.AddListener(OnGrab);
         grabInteractable.selectExited.AddListener(OnRelease);
 
-        //fin
-
-
+        // Recherche automatique de la pointe si elle n’est pas déjà définie
         if (pointeFleche == null)
         {
             // Recherche automatique de POINT_HP si elle n'est pas assignée
             pointeFleche = transform.Find("Point_HP");
 
-            if (pointeFleche == null)
-            {
-                Debug.LogError("POINT_HP non trouvé ! Vérifie que le nom est correct.");
-            }
         }
 
     }
@@ -78,11 +70,12 @@ public class FlecheScript : MonoBehaviour
 
         if ( collision.gameObject.CompareTag("Cible")) // Vérifie que la cible est touchée
         {
+            // Vérifie si c’est la pointe qui touche la cible
             if (pointeFleche != null && collision.contacts[0].thisCollider.gameObject == pointeFleche.gameObject)
             {
                 hasScored = true;
 
-                // Désactiver la physique de la flèche
+                // Stoppe la physique
                 Rigidbody rb = GetComponent<Rigidbody>();
                 if (rb != null)
                 {
@@ -91,24 +84,19 @@ public class FlecheScript : MonoBehaviour
                     rb.angularVelocity = Vector3.zero;
                 }
 
-                // Fixer la flèche à la cible
+                // Colle la fléchette à la cible
                 transform.SetParent(collision.transform);
 
-                
-
+                // Calcul du score
                 int score = GetScore(collision); // Appel de la méthode GetScore
 
-                // Mise à jour du score
-                // if (scoreManager != null)
-                // {
-                //  scoreManager.SoustrairePoints(score);
-                // }
-
+                // Enregistrement du score
                 if (gameManager != null)
                 {
                     gameManager.RegisterThrow(score);
                 }
 
+                // Affichage visuel du score
                 if (floatingScorePrefab != null)
                 {
                     Vector3 spawnPos = pointeFleche.position + Vector3.up * 0.1f;
@@ -127,6 +115,7 @@ public class FlecheScript : MonoBehaviour
 
     public int GetScore(Collision collision)
     {
+        // Récupération du score en fonction de la zone touchée
         int score = 0;
 
         if (collision.collider.gameObject.name == "Cylinder.005" ) {
@@ -457,9 +446,7 @@ public class FlecheScript : MonoBehaviour
         {
             score = 3;
         }
-        
-
-
+      
         return score;
     }
 
@@ -468,16 +455,18 @@ public class FlecheScript : MonoBehaviour
 
 private void OnGrab(SelectEnterEventArgs args)
 {
+    // Quand le joueur saisit la fléchette
     isHeld = true;
     rb.isKinematic = true;
     rb.velocity = Vector3.zero;
     rb.angularVelocity = Vector3.zero;
     lastPosition = transform.position;
-        hasScored = false;
+    hasScored = false; // Réinitialisation du scoring
     }
 
 private void OnRelease(SelectExitEventArgs args)
 {
+    // Lorsqu’on lâche la fléchette
     isHeld = false;
     rb.useGravity = true;
 
@@ -487,7 +476,7 @@ private void OnRelease(SelectExitEventArgs args)
 
 private IEnumerator ApplyThrowVelocity()
 {
-    yield return null;
+    yield return null; // Attendre une frame
 
     rb.isKinematic = false;
 
@@ -496,11 +485,11 @@ private IEnumerator ApplyThrowVelocity()
     rb.velocity = throwDirection * throwForceMultiplier;
     rb.angularVelocity = Vector3.zero;
 
-    Debug.Log("DartThrow: Vitesse appliquée -> " + rb.velocity);
 }
 
 void FixedUpdate()
 {
+    // Pendant le vol, on aligne la fléchette selon sa trajectoire
     if (!isHeld && rb.velocity.magnitude > 0.1f)
     {
         AlignDartWithVelocity();
@@ -527,11 +516,12 @@ private void AlignDartWithVelocity()
 
 private IEnumerator DestroyAndRespawnDart()
 {
+    // Attend 5 secondes, puis replace la fléchette
     yield return new WaitForSeconds(5f);
 
     grabInteractable.enabled = false;
 
-    transform.position = new Vector3(1.676f, 3.67199993f, -0.170000002f);
+    transform.position = new Vector3(7.079f, 3.67199993f, 6.20499992f);
     transform.rotation = respawnRotation;
     transform.SetParent(null);
 

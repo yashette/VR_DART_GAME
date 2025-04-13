@@ -1,27 +1,27 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+// Ce script anime une main en VR en fonction des entrées utilisateur (gâchette et prise)
 public class AnimateHandOnInput : MonoBehaviour
 {
-    public InputActionProperty pinchAnimationAction;
-    public InputActionProperty gripAnimationAction;
-    public Animator handAnimator;
+    public InputActionProperty pinchAnimationAction;  // Action d'entrée pour l'animation de la gâchette (pinch/trigger)
+    public InputActionProperty gripAnimationAction;   // Action d'entrée pour l'animation de la prise (grip)
+    public Animator handAnimator;                     // Référence à l’Animator de la main
 
-    // Start is called before the first frame update
+    // Start est appelé au début
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+    // Update est appelé à chaque frame
     void Update()
     {
-       float triggerValue = pinchAnimationAction.action.ReadValue<float>();
+        // Lecture de la valeur de la gâchette (Trigger), comprise entre 0 et 1
+        float triggerValue = pinchAnimationAction.action.ReadValue<float>();
         handAnimator.SetFloat("Trigger", triggerValue);
 
         float gripValue = pinchAnimationAction.action.ReadValue<float>();
-        handAnimator.SetFloat("Grip", triggerValue);
+        handAnimator.SetFloat("Grip", triggerValue); // Mise à jour du paramètre "Grip" de l'Animator
     }
 }
