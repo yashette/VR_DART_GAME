@@ -72,6 +72,7 @@ public class GameManager : MonoBehaviour
             // Si le joueur dépasse 0, c’est un "bust", on restaure l’ancien score
             current.score = current.previousScore;
             bustText.gameObject.SetActive(true);
+            AudioManager.Instance.PlayClip(AudioManager.Instance.bustClip);
         }
         else
         {
@@ -96,6 +97,7 @@ public class GameManager : MonoBehaviour
     {
         bustText.gameObject.SetActive(false);
         currentPlayerIndex = (currentPlayerIndex + 1) % players.Length;
+        AudioManager.Instance.PlayClip(AudioManager.Instance.nextPlayerClip);
         UpdateUI();
     }
 
@@ -103,6 +105,16 @@ public class GameManager : MonoBehaviour
     void EndGame()
     {
         turnText.text = $"{players[currentPlayerIndex].playerName} won !";
+
+        if (players[currentPlayerIndex].playerName == "Player 1")
+        {
+            AudioManager.Instance.PlayClip(AudioManager.Instance.victoryP1Clip);
+        }
+        else
+        {
+            AudioManager.Instance.PlayClip(AudioManager.Instance.victoryP2Clip);
+        }
+
     }
 
     // Met à jour l’interface (tour actuel + scores)

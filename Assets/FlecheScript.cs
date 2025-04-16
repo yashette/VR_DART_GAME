@@ -124,6 +124,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.006")
         {
             score = 36;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.doubleClip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.007")
         {
@@ -132,14 +133,18 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.008")
         {
             score = 54;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.tripleJ2Clip);
+
         }
         else if (collision.collider.gameObject.name == "Cylinder.001")
         {
             score = 50;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.bonzayClip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.003")
         {
             score = 25;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.bonzayClip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.009")
         {
@@ -148,6 +153,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.010")
         {
             score = 8;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.doubleClip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.011")
         {
@@ -156,6 +162,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.012")
         {
             score = 12;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.tripleJ2Clip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.013")
         {
@@ -164,7 +171,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.014")
         {
             score = 26;
-
+            AudioManager.Instance.PlayClip(AudioManager.Instance.doubleClip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.015")
         {
@@ -173,6 +180,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.016")
         {
             score = 39;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.tripleJ2Clip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.017")
         {
@@ -181,6 +189,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.018")
         {
             score = 12;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.doubleClip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.019")
         {
@@ -189,6 +198,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.020")
         {
             score = 18;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.tripleJ2Clip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.021")
         {
@@ -197,6 +207,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.022")
         {
             score = 20;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.doubleClip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.023")
         {
@@ -205,6 +216,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.024")
         {
             score = 30;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.tripleJ2Clip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.025")
         {
@@ -213,6 +225,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.026")
         {
             score = 30;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.doubleClip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.027")
         {
@@ -221,6 +234,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.028")
         {
             score = 45;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.tripleJ2Clip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.029")
         {
@@ -229,6 +243,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.030")
         {
             score = 4;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.doubleClip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.031")
         {
@@ -237,6 +252,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.032")
         {
             score = 6;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.tripleJ2Clip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.033")
         {
@@ -245,6 +261,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.034")
         {
             score = 34;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.doubleClip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.035")
         {
@@ -253,6 +270,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.036")
         {
             score = 51;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.tripleJ2Clip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.037")
         {
@@ -261,6 +279,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.038")
         {
             score = 6;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.doubleClip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.039")
         {
@@ -269,6 +288,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.040")
         {
             score = 9;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.tripleJ2Clip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.041")
         {
@@ -277,6 +297,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.042")
         {
             score = 38;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.doubleClip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.043")
         {
@@ -285,6 +306,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.044")
         {
             score = 57;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.tripleJ2Clip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.045")
         {
@@ -293,6 +315,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.046")
         {
             score = 14;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.doubleClip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.047")
         {
@@ -301,6 +324,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.048")
         {
             score = 21;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.tripleJ2Clip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.049")
         {
@@ -309,6 +333,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.050")
         {
             score = 32;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.doubleClip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.051")
         {
@@ -317,6 +342,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.052")
         {
             score = 48;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.tripleJ2Clip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.053")
         {
@@ -325,6 +351,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.054")
         {
             score = 16;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.doubleClip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.055")
         {
@@ -333,6 +360,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.056")
         {
             score = 24;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.tripleJ2Clip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.057")
         {
@@ -341,6 +369,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.058")
         {
             score = 22;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.doubleClip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.059")
         {
@@ -349,6 +378,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.060")
         {
             score = 33;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.tripleJ2Clip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.061")
         {
@@ -357,6 +387,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.062")
         {
             score = 28;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.doubleClip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.063")
         {
@@ -365,6 +396,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.064")
         {
             score = 42;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.tripleJ2Clip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.065")
         {
@@ -373,6 +405,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.066")
         {
             score = 18;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.doubleClip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.067")
         {
@@ -381,6 +414,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.068")
         {
             score = 27;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.tripleJ2Clip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.069")
         {
@@ -389,6 +423,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.070")
         {
             score = 24;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.doubleClip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.071")
         {
@@ -397,6 +432,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.072")
         {
             score = 36;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.tripleJ2Clip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.073")
         {
@@ -405,6 +441,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.074")
         {
             score = 10;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.doubleClip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.075")
         {
@@ -413,6 +450,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.076")
         {
             score = 15;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.tripleJ2Clip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.077")
         {
@@ -421,6 +459,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.078")
         {
             score = 40;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.doubleClip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.079")
         {
@@ -429,6 +468,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.080")
         {
             score = 60;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.tripleJ2Clip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.081")
         {
@@ -437,6 +477,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.082")
         {
             score = 2;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.doubleClip);
         }
         else if (collision.collider.gameObject.name == "Cylinder.083")
         {
@@ -445,6 +486,7 @@ public class FlecheScript : MonoBehaviour
         else if (collision.collider.gameObject.name == "Cylinder.084")
         {
             score = 3;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.tripleJ2Clip);
         }
       
         return score;
