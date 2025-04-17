@@ -508,6 +508,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5219034128133273901, guid: 1642cc2af37e5a54f8ee338ed8d6b139, type: 3}
   m_PrefabInstance: {fileID: 26686112}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &31182906
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 31182908}
+  - component: {fileID: 31182907}
+  m_Layer: 0
+  m_Name: HapticManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &31182907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31182906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c3de507778881f4d8f24d9d2d8cded1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 1761076612}
+  amplitude: 1
+  duration: 25
+--- !u!4 &31182908
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31182906}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.01, y: 5.37, z: 6.2725987}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &73430845 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1210130346422286, guid: 922c6cbd6b3b88743b1e78297ef7b398, type: 3}
@@ -1574,6 +1621,7 @@ MonoBehaviour:
   - {fileID: 1777396874}
   nextPlayerButton: {fileID: 1433626800}
   bustText: {fileID: 2039226821}
+  haptic: {fileID: 0}
 --- !u!4 &167179653
 Transform:
   m_ObjectHideFlags: 0
@@ -20296,3 +20344,4 @@ SceneRoots:
   - {fileID: 351606674}
   - {fileID: 167179653}
   - {fileID: 349760515}
+  - {fileID: 31182908}

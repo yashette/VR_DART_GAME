@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     public TMP_Text bustText;                        // Message affiché en cas de "bust" (dépassement de score)
 
     private int currentStartingScore = 301;         // Score de départ (modifiable)
+    public HapticFeedback haptic;                   // HapticManager pour la vibration
 
     private void Start()
     {
@@ -49,6 +50,8 @@ public class GameManager : MonoBehaviour
         currentPlayerIndex = 0;
         bustText.gameObject.SetActive(false);
         UpdateUI();
+
+        haptic.TriggerHaptic(); // on fait vibrer la manette
     }
 
     // Réinitialise complètement le jeu avec le score de départ actuel
