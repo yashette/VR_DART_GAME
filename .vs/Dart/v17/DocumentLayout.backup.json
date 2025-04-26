@@ -1,12 +1,86 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Max\\Dart\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Max\\Dart\\Library\\PackageCache\\com.unity.xr.interaction.toolkit@2.6.4\\Runtime\\UI\\TrackedDeviceGraphicRaycaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.xr.interaction.toolkit@2.6.4\\Runtime\\UI\\TrackedDeviceGraphicRaycaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{159D45A4-431C-E35D-3325-D930AC084F29}|Assembly-CSharp.csproj|c:\\users\\max\\dart\\assets\\fries and seagull\\bar 02\\scene props\\scripts\\arrayarrangement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{159D45A4-431C-E35D-3325-D930AC084F29}|Assembly-CSharp.csproj|solutionrelative:assets\\fries and seagull\\bar 02\\scene props\\scripts\\arrayarrangement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{159D45A4-431C-E35D-3325-D930AC084F29}|Assembly-CSharp.csproj|C:\\Users\\Max\\Dart\\assets\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{159D45A4-431C-E35D-3325-D930AC084F29}|Assembly-CSharp.csproj|solutionrelative:assets\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{159D45A4-431C-E35D-3325-D930AC084F29}|Assembly-CSharp.csproj|C:\\Users\\Max\\Dart\\assets\\hapticfeedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{159D45A4-431C-E35D-3325-D930AC084F29}|Assembly-CSharp.csproj|solutionrelative:assets\\hapticfeedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ArrayArrangement.cs",
+              "DocumentMoniker": "C:\\Users\\Max\\Dart\\Assets\\Fries and Seagull\\Bar 02\\Scene Props\\Scripts\\ArrayArrangement.cs",
+              "RelativeDocumentMoniker": "Assets\\Fries and Seagull\\Bar 02\\Scene Props\\Scripts\\ArrayArrangement.cs",
+              "ToolTip": "C:\\Users\\Max\\Dart\\Assets\\Fries and Seagull\\Bar 02\\Scene Props\\Scripts\\ArrayArrangement.cs",
+              "RelativeToolTip": "Assets\\Fries and Seagull\\Bar 02\\Scene Props\\Scripts\\ArrayArrangement.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T11:43:39.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TrackedDeviceGraphicRaycaster.cs",
+              "DocumentMoniker": "C:\\Users\\Max\\Dart\\Library\\PackageCache\\com.unity.xr.interaction.toolkit@2.6.4\\Runtime\\UI\\TrackedDeviceGraphicRaycaster.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.xr.interaction.toolkit@2.6.4\\Runtime\\UI\\TrackedDeviceGraphicRaycaster.cs",
+              "ToolTip": "C:\\Users\\Max\\Dart\\Library\\PackageCache\\com.unity.xr.interaction.toolkit@2.6.4\\Runtime\\UI\\TrackedDeviceGraphicRaycaster.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.xr.interaction.toolkit@2.6.4\\Runtime\\UI\\TrackedDeviceGraphicRaycaster.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T17:39:02.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\Max\\Dart\\Assets\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\GameManager.cs",
+              "ToolTip": "C:\\Users\\Max\\Dart\\Assets\\GameManager.cs",
+              "RelativeToolTip": "Assets\\GameManager.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwDMAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T13:32:57.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HapticFeedback.cs",
+              "DocumentMoniker": "C:\\Users\\Max\\Dart\\Assets\\HapticFeedback.cs",
+              "RelativeDocumentMoniker": "Assets\\HapticFeedback.cs",
+              "ToolTip": "C:\\Users\\Max\\Dart\\Assets\\HapticFeedback.cs",
+              "RelativeToolTip": "Assets\\HapticFeedback.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T13:31:46.327Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

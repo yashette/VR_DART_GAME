@@ -102,6 +102,7 @@ public class GameManager : MonoBehaviour
         currentPlayerIndex = (currentPlayerIndex + 1) % players.Length;
         AudioManager.Instance.PlayClip(AudioManager.Instance.nextPlayerClip);
         UpdateUI();
+        haptic.TriggerHaptic();
     }
 
     // Affiche le message de fin de jeu
