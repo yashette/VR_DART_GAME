@@ -16,6 +16,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tankard Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 8356236385327244597, guid: 1a71053b01fd76844b2ce27e6ddaa142, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8711473752090771341, guid: 1a71053b01fd76844b2ce27e6ddaa142, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.346022
