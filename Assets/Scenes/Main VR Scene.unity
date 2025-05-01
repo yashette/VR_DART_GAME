@@ -2999,6 +2999,7 @@ MonoBehaviour:
   doubleClip: {fileID: 8300000, guid: 5e0d7a6854a0eaf45a259a6d39030e88, type: 3}
   tripleJ2Clip: {fileID: 8300000, guid: 9fa773f66c9c01140ad0bbe1dbe45025, type: 3}
   bonzayClip: {fileID: 8300000, guid: 74700271dc295a94f960c3da48d75e6c, type: 3}
+  potionClip: {fileID: 8300000, guid: 218c93afe0e0d904f9ab6ec5f169e301, type: 3}
 --- !u!82 &349760514
 AudioSource:
   m_ObjectHideFlags: 0

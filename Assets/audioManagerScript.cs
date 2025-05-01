@@ -14,6 +14,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip doubleClip;
     public AudioClip tripleJ2Clip;
     public AudioClip bonzayClip;
+    public AudioClip potionClip;
 
     private void Awake()
     {
