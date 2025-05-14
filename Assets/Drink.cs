@@ -3,13 +3,14 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class DrinkableGlass : MonoBehaviour
 {
-    public GameObject liquidObject; // Le sous-element qui represente le liquide
-    public float drinkingAngleThreshold = 60f; // L'angle pour commencer a boire
-    public float drinkingDuration = 2f; // Duree avant de boire en secondes
+    public GameObject liquidObject; // Le sous-élément qui représente le liquide
+    public float drinkingAngleThreshold = 60f; // L'angle pour commencer à boire
+    public float drinkingDuration = 2f; // Durée avant de boire en secondes
 
     private XRGrabInteractable grabInteractable;
     private bool isDrinking = false;
     private float drinkingTimer = 0f;
+    private bool hasPlayedDrinkingSound = false;
 
     private void Awake()
     {
@@ -25,44 +26,46 @@ public class DrinkableGlass : MonoBehaviour
 
             if (angle > drinkingAngleThreshold)
             {
-
-                AudioManager.Instance.PlayClip(AudioManager.Instance.potionClip);
-
                 if (!isDrinking)
                 {
-                    // Debut du timer de boisson
+                    // Début du timer de boisson
                     isDrinking = true;
                     drinkingTimer = 0f;
+
+                    // On joue le son qu'une seule fois au début
+                    if (!hasPlayedDrinkingSound)
+                    {
+                        AudioManager.Instance.PlayClip(AudioManager.Instance.potionClip);
+                        hasPlayedDrinkingSound = true;
+                    }
                 }
                 else
                 {
-                    // Continue a boire
+                    // Continue à boire
                     drinkingTimer += Time.deltaTime;
                     if (drinkingTimer >= drinkingDuration)
                     {
                         if (liquidObject != null && liquidObject.activeSelf)
                         {
-                            Debug.Log("Boisson terminee !");
-                            liquidObject.SetActive(false); // Cache le liquide apres 2 secondes
+                            liquidObject.SetActive(false); // Cache le liquide après 2 secondes
                         }
                     }
                 }
             }
             else
             {
-                // Si le verre est redresse avant la fin, reset
-                if (isDrinking)
-                {
-                    isDrinking = false;
-                    drinkingTimer = 0f;
-                }
+                // Si le verre est redressé avant la fin, reset
+                isDrinking = false;
+                drinkingTimer = 0f;
+                hasPlayedDrinkingSound = false;
             }
         }
         else
         {
-            // Si on lache le verre, reset
+            // Si on lâche le verre, reset
             isDrinking = false;
             drinkingTimer = 0f;
+            hasPlayedDrinkingSound = false;
         }
     }
 }
