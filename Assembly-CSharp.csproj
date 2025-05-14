@@ -73,6 +73,7 @@
     <Compile Include="Assets\TargetMover.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
+    <Compile Include="Assets\TrashBin.cs" />
     <Compile Include="Assets\audioManagerScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\Fries and Seagull\Bar 02\Scene Props\Scripts\Rotatable.cs" />
