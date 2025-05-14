@@ -1,8 +1,15 @@
 "# VR_DART_GAME" 
-
+Prérequis:  Il faudra avoir unity d'installer sur l'ordianteur afin de pouvoir build l'application.
 Le jeu de fléchette en VR  a été développé sur Unity 2022.3.57f1(LTS), Il est préférable de build l'application sur cette version d'UNITY afin d'éviter tout bug.
 
-Une fois le projet récupérer ouvrir de projet avec Unity : 
+Pour installer cette version sur le Unity Hub
+- Aller dans Installs -> Install Editor --> Archive puis cliquer sur le lien download archive
+- Ensuite sur la page aller dans 2022 cocher LTS si ce n'est pas deja coché puis cliquer sur INSTALL pour la version 2022.3.57f1
+
+Une fois le projet récupérer toujours sur le Unity Hub:
+Enlever le fichier ADB.zip et le garder dans un autre dossier. Il ne fait pas partie du projet UNITY mais sera utile plus tard pour build l'application.
+
+Ouvrir le projet avec Unity Hub: 
 - Projects -> ADD -> Add project from disk
 - Puis lancer le projet cela peut prendre un peu de temp car Unity va retélécharger les bibliothèques
 
